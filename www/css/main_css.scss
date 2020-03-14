@@ -1,0 +1,56 @@
+
+$col_background_0:rgb(0, 0, 0);
+$col_background_1:rgb(165, 212, 218);
+
+body
+{
+  width: 100vw;
+  height: 700vh;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+  .moon
+  {
+    position: fixed;
+    width: 10vw;
+    height: 20vh;
+    left: 40vw;
+  }
+  .land_0
+  {
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    left: -40vw;
+  }
+  .land_1
+  {
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    left: 20vw;
+  }
+  .land_2
+  {
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    left: -10vw;
+  }
+  .mountain_0
+  {
+    position: fixed;
+    width: 40vw;
+    height: auto;
+    left: 10vw;
+  }
+  .mountain_1
+  {
+    position: fixed;
+    width: 30vw;
+    height: auto;
+    left: 50vw;
+  }
+}
