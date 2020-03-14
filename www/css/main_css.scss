@@ -10,7 +10,7 @@ body
   position: relative;
   overflow-x: hidden;
   background-color: $col_background_0;
-  background: linear-gradient(180deg, $col_background_0 0%, $col_background_1 100%);
+  //background: linear-gradient(180deg, $col_background_0 0%, $col_background_1 90%);
   .moon
   {
     position: fixed;
@@ -69,5 +69,13 @@ body
     left: -5vw;
       -webkit-filter: blur(4px);
               filter: blur(4px);
+  }
+  .star
+  {
+    position: fixed;
+    width: 2px;
+    height: auto;
+      -webkit-filter: blur(1px);
+              filter: blur(1px);
   }
 }
