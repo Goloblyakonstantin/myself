@@ -22,14 +22,16 @@ if ($(window).width()<$(window).height())
 //после прелоадера
 $(document).ready(function()
 {
-  setTimeout(start,1000)
+  $(window).scrollTop(0);
+  setTimeout(start,2000)
 });
 
 //стартуем
 function start()
 {
-  move();
   $(window).scrollTop(0);
+  move();
+  $(".preloader").toggleClass("loaded");
 }
 
 //скролим
@@ -53,6 +55,7 @@ $(window).resize(function()
 function move()
 {
   scroll_top=$(window).scrollTop();
+  $('.text_0').css({opacity:(body_height-scroll_top*3)/body_height});
   //$('.moon').offset({top:$(window).scrollTop()-10*min_y/height_y+10*min_y/height_y*(body_height-$(window).scrollTop())/body_height});
   //$('.land_0').offset({top:$(window).scrollTop()+20*min_y/height_y+80*min_y/height_y*(body_height-$(window).scrollTop())/body_height});
   $('.moon').offset({top:scroll_top+5*min_y/height_y+$('.moon').height()+10*min_y/height_y*(body_height-scroll_top)/body_height});

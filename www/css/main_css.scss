@@ -4,13 +4,43 @@ $col_background_1:rgb(165, 212, 218);
 
 body
 {
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-weight: 500;
   width: 100vw;
   height: 700vh;
   margin: 0;
   position: relative;
   overflow-x: hidden;
   background-color: $col_background_0;
-  //background: linear-gradient(180deg, $col_background_0 0%, $col_background_1 90%);
+  //background: linear-gradient(180deg, $col_background_0 0%, $col_background_1 100%)!important;
+  .text_0
+  {
+    text-align: center;
+    position: fixed;
+    top: 20vh;
+    z-index: 15;
+    width: 100vw;
+    h1
+    {
+      color: white;
+      font-size: 40px;
+    }
+  }
+  .preloader
+  {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: $col_background_0;
+    z-index: 10;
+  }
+  .preloader.loaded
+  {
+    transition: 1.5s;
+    opacity: 0;
+    visibility: hidden;
+  }
   .moon
   {
     position: fixed;
@@ -48,9 +78,9 @@ body
   .mountain_0
   {
     position: fixed;
-    width: 40vw;
+    width: 50vw;
     height: auto;
-    left: 10vw;
+    left: 0;
   }
   .mountain_1
   {
@@ -77,5 +107,18 @@ body
     height: auto;
       -webkit-filter: blur(1px);
               filter: blur(1px);
+  }
+}
+@media (max-width:576px)
+{
+  body
+  {
+    .text_0
+    {
+      h1
+      {
+        font-size: 20px;
+      }
+    }
   }
 }

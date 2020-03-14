@@ -7,6 +7,12 @@
     <title></title>
   </head>
   <body>
+    <div class="preloader">
+
+    </div>
+    <div class="text_0">
+      <h1>У каждого человека свои звёзды</h1>
+    </div>
     <?php
       for ($i=0; $i <17 ; $i++)
       {
@@ -16,12 +22,12 @@
       }
     ?>
     <img src="img/moon.svg" class="moon" alt="">
-    <img src="img/mountain_1.png" class="mountain_1" alt="">
-    <img src="img/land_2_2.png" class="land_2" alt="">
-    <img src="img/land_1_1.png" class="land_1" alt="">
-    <img src="img/mountain_0.png" class="mountain_0" alt="">
-    <img src="img/land_0_0.png" class="land_0" alt="">
-    <img src="img/tree_0.png" class="tree_0" alt="">
+    <img src="img/mountain_1.svg" class="mountain_1" alt="">
+    <img src="img/land_2_2.svg" class="land_2" alt="">
+    <img src="img/land_1_1.svg" class="land_1" alt="">
+    <img src="img/mountain_0.svg" class="mountain_0" alt="">
+    <img src="img/land_0_0.svg" class="land_0" alt="">
+    <img src="img/tree_0.svg" class="tree_0" alt="">
     <?php
       for ($i=0; $i <5 ; $i++)
       {
