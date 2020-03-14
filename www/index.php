@@ -13,6 +13,7 @@
     <img src="img/land_1_1.png" class="land_1" alt="">
     <img src="img/mountain_0.png" class="mountain_0" alt="">
     <img src="img/land_0_0.png" class="land_0" alt="">
+    <img src="img/tree_0.png" class="tree_0" alt="">
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
